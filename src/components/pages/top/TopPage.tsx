@@ -129,7 +129,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import Map, { Marker, NavigationControl, Popup } from 'react-map-gl';
 import styles from './TopPage.module.scss';
 import { shelterRepository } from '@/libs/repository/firebase';
-import { fetchGeocode } from '@/libs/services/getCoordinate';
+// import { fetchGeocode } from '@/libs/services/getCoordinate';
 
 type Pin = {
   title: string;
@@ -177,10 +177,10 @@ const renderStars = (rating: number) => {
 const TopPage: React.FC = () => {
   const [pinList, setPinList] = useState<Pin[]>([]);
   const [popupInfo, setPopupInfo] = useState<Pin | null>(null);
-  const [inputAddress, setInputAddress] = useState('');
-  const [inputLocation, setInputLocation] = useState<{ latitude: number; longitude: number } | null>(null);
-  const [topShelters, setTopShelters] = useState<Pin[]>([]);
-  const [searchClicked, setSearchClicked] = useState(false); // State to track if search was clicked
+  // const [inputAddress, setInputAddress] = useState('');
+  // const [inputLocation, setInputLocation] = useState<{ latitude: number; longitude: number } | null>(null);
+  // const [topShelters, setTopShelters] = useState<Pin[]>([]);
+  // const [searchClicked, setSearchClicked] = useState(false); // State to track if search was clicked
 
   useEffect(() => {
     const fetchData = async () => {
@@ -276,11 +276,11 @@ const TopPage: React.FC = () => {
           <NavigationControl />
         </Map>
       </div>
-      <div className={styles.title}>避難所マップ</div>
+      <div className={styles.title}>レストラン検索</div>
       <input
         type="text"
-        value={inputAddress}
-        onChange={(e) => setInputAddress(e.target.value)}
+        // value={inputAddress}
+        // onChange={(e) => setInputAddress(e.target.value)}
         placeholder="住所を入力してください"
       />
       {/* <button onClick={handleSearch}>検索</button> */}
