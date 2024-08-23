@@ -17,12 +17,13 @@ const ItemsInputUnit = () => {
       <div className={styles.bg} />
       <FlexBox justifyContent='center'>
         <Typography fontWeight={600} fontSize='20px' color='red1'>
-          在庫情報入力
+          新規メニュー
         </Typography>
       </FlexBox>
       <FlexBox gap='24px' className={styles.inputContainer}>
         <Input
-          label='食料(食分)'
+          // label='食料(食分)'
+          label='マヨネーズ'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -30,7 +31,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['food']?.message}
         />
         <Input
-          label='飲料水(本)'
+          label='片栗粉'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -38,7 +39,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['water']?.message}
         />
         <Input
-          label='毛布(枚)'
+          label='水'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -46,7 +47,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['blanket']?.message}
         />
         <Input
-          label='公衆電話(台)'
+          label='ソース'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -54,7 +55,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['phone']?.message}
         />
         <Input
-          label='懐中電灯(個)'
+          label='塩'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -62,7 +63,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['flashlight']?.message}
         />
         <Input
-          label='テレビ(台)'
+          label='チキン'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -70,7 +71,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['television']?.message}
         />
         <Input
-          label='扇風機(台)'
+          label='紅生姜'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -78,7 +79,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['fan']?.message}
         />
         <Input
-          label='発電機(台)'
+          label='のり'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -86,7 +87,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['generator']?.message}
         />
         <Input
-          label='テント(基)'
+          label='小麦粉'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -94,7 +95,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['tent']?.message}
         />
         <Input
-          label='使い捨てカイロ(個)'
+          label='食制限対応'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
@@ -102,7 +103,7 @@ const ItemsInputUnit = () => {
           error={errors['items']?.['heatPack']?.message}
         />
         <Input
-          label='メガホン(個)'
+          label='鰹節'
           required
           width='calc((100% - 24px) / 2)'
           className={styles.input}
