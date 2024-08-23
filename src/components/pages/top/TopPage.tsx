@@ -248,8 +248,9 @@ const TopPage: React.FC = () => {
             >
               <div>
                 <h4>{data.title}</h4>
-                <p>評価: {renderStars(data.score)}</p>
-                <p>住所: {data.address}</p>
+                <p>Vegan</p>
+                <p>Rating: {renderStars(data.score)}</p>
+                <p>Address: {data.address}</p>
               </div>
             </Popup>
           )}
